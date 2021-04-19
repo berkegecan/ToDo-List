@@ -15,8 +15,8 @@
         <div class="card">
           <div class="card-header">
             <span>ToDo List</span>
-            <label for="order">New Task</label>
-            <input type="text" name="oreder" id="order" placeholder="What will you do?">
+            <label id="new-task">New Task</label>
+            <input type="text" name="order" id="order" placeholder="What will you do?">
             <button type="button" id="itemAdd" class="btn btn-green">ADD ToDo</button>
           </div>
           <div class="card-body">
@@ -24,34 +24,48 @@
             <div id="list">
               <ul>
                 <li>
-                  List Item
+                  <label>
+                    <input type="checkbox" class="checkbox" id="0">
+                    <label for="0">List Item</label>
+                  </label>                  
                   <a href=""><i class="fa fa-remove"></i></a>
                 </li>
                 <li>
-                  List Item
+                  <label>
+                    <input type="checkbox" class="checkbox" id="1"><label for="1">List Item</label>
+                  </label>
                   <a href=""><i class="fa fa-remove"></i></a>
                 </li>
                 <li>
-                  List Item
+                  <label>
+                    <input type="checkbox" class="checkbox" id="2"><label for="2">List Item</label>
+                  </label>
                   <a href=""><i class="fa fa-remove"></i></a>
                 </li>
                 <li>
-                  List Item
+                  <label>
+                    <input type="checkbox" class="checkbox" id="3"><label for="3">List Item</label>
+                  </label>
                   <a href=""><i class="fa fa-remove"></i></a>
                 </li>
                 <li>
-                  List Item
+                  <label>
+                    <input type="checkbox" class="checkbox" id="4"><label for="4">List Item</label>
+                  </label>
                   <a href=""><i class="fa fa-remove"></i></a>
                 </li>
               </ul>
             </div>
             <button type="button" id="deleteAll" class="btn btn-black">CLEAR ALL</button>
+            <button type="button" id="showChecked" class="btn btn-green">SHOW CHECKED</button>
+            <button type="button" id="showUnchecked" class="btn btn-green">SHOW UNCHECKED</button>
+            <button type="button" id="showAll" class="btn btn-green">SHOW ALL</button>
           </div>
           </div>
         </div>
       </div>
     </div>
 
-    <script src="app.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
